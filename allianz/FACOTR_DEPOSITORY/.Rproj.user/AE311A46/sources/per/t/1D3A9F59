@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1635672625983.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2762364717",
+    "id" : "1D3A9F59",
+    "lastKnownWriteTime" : 1639204110,
+    "last_content_update" : 1639204110912,
+    "path" : "D:/CODE/r_codes/FACOTR_DEPOSITORY/uqer_factor/read_uqer_data.py",
+    "project_path" : "uqer_factor/read_uqer_data.py",
+    "properties" : {
+        "cursorPosition" : "47,26",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "python"
+}

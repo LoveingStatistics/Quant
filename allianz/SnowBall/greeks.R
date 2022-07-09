@@ -1,0 +1,16 @@
+
+# trading
+
+delta <- function(st, t, index, knock_in_out) {
+
+  st_up <- st + st / 10000
+  st_down <- st - st / 10000
+
+  up_npv <- snowball_npv(st_up, t, index, knock_in_out, N = 1000000)
+  down_npv <- snowball_npv(st_down, t, index, knock_in_out, N = 30000)
+
+  up_npv <- round(up_npv, 6)
+  down_npv <- round(down_npv, 6)
+  delta <- (up_npv - down_npv) / (st_up - st_down)
+}
+

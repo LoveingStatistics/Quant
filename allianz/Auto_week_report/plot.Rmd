@@ -1,0 +1,333 @@
+---
+title: "week report"
+author: "QMD"
+date: "2021/12/21"
+output:
+  html_document: 
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE,fig.width=10,fig.height=6)
+```
+
+```{r pacakges}
+library(data.table)
+library(ggplot2)
+showtext::showtext_auto()
+
+update_date <- as.Date("2021-11-05")
+prev_week_date <- as.Date("2021-10-29")
+prev_year_date <- as.Date("2020-12-31")
+
+# wind_path <- "./db_data/wind_data"
+# jydb_path <- "./db_data/jydb_data"
+# download_path <- "./db_data/download_wind_data"
+output_path <- "./output"
+source("./plot.R",encoding = 'UTF-8')
+
+```
+
+
+# 一 权益
+
+## 1.收益率
+
+### 1.指数收益率
+
+```{r ret}
+plots$index_ret()
+```
+
+### 2.行业收益率
+
+```{r indus_ret}
+plots$industry_ret()
+```
+
+## 2.估值
+
+### 1.指数估值
+
+#### 1.PB
+
+```{r valuation}
+plots$index_pb()
+```
+
+#### 2.PE
+
+```{r index_pe}
+plots$index_pe()
+```
+
+#### 3.PEG
+
+```{r index_peg}
+plots$index_peg()
+```
+
+### 2.行业估值
+
+#### 1.PB
+
+```{r indus_pb}
+plots$industry_pb()
+```
+
+#### 2.PE
+
+```{r indus_pe}
+plots$industry_pe()
+```
+
+#### 3.PEG
+
+```{r peg}
+plots$industry_peg()
+```
+
+## 3.市场流动性
+
+```{r liquidity}
+plots$turnover()
+
+plots$tbl_turnover()
+```
+
+## 4.ETF净流入情况(亿元)
+
+```{r ETF}
+plots$tbl_etf()
+```
+
+## 5.北向资金
+
+### 1.北向资金累计净流入
+
+```{r north_cumulative}
+plots$north_cum(update_date)
+```
+
+### 2.累计净流入
+
+```{r north_net}
+plots$north_single(update_date)
+```
+
+### 3.北向资金行业持股比例
+
+```{r north_indus}
+plots$north_hold()
+```
+
+### 4.北向资金行业持股变动
+
+```{r north_indus_chg}
+plots$north_chg()
+```
+
+## 6.两融成交额
+
+```{r credittrading}
+plots$cred_trade(update_date)
+```
+
+## 7.分化程度
+
+```{r deviation}
+plots$deviation()
+
+plots$tbl_deviation()
+```
+
+# 二 债券
+
+## 1.信用利差
+
+```{r bond_diff}
+plots$cred_spread()
+```
+
+## 2.可转债
+
+### 1.可转债与全A收益曲线
+
+```{r convertbond}
+plots$convert_bond()
+```
+
+### 2.可转债日均交易额
+
+```{r mean_turnover}
+plots$convert_turnover()
+```
+
+### 3.转股溢价率小于0占比
+
+```{r stock_bond_ratio}
+plots$convert_pct()
+```
+
+# 三 衍生品
+
+## 1.金融期货
+
+### 1.三大股指期货收益率统计
+
+```{r futures_stat}
+plots$tbl_futures()
+```
+
+### 2.三大股指基差走势
+
+```{r futures_spread}
+plots$futures_spread(update_date)
+```
+
+### 3.股指期权PCR
+
+```{r options_pcr}
+plots$pcr(update_date)
+```
+
+## 2.商品期货
+
+### 1.贵金属类
+
+```{r gjs_futures}
+plots$tbl_gjs()
+```
+
+### 2.黑色系
+
+```{r hs_futures}
+plots$tbl_hs()
+```
+
+### 3.有色金属类
+
+```{r jbjs_futures}
+plots$tbl_jbjs()
+```
+
+### 4.能源化工类
+
+```{r ny_futures}
+plots$tbl_ny()
+```
+
+### 5.农产品类
+
+```{r ncp_futures}
+plots$tbl_ncp()
+```
+
+
+
+# 四 资管
+
+## 1.公募基金分类统计
+
+```{r public_fund}
+plots$pub_fund()
+```
+
+## 2.量化公募基金表现
+
+### 1.公募基金量化表现
+
+#### 1.公募中证500指数增强基金
+
+```{r quant_public_500}
+plots$tbl_hs500()
+```
+
+#### 2.公募沪深300指数增强基金
+
+```{r quant_public_300}
+plots$tbl_hs300()
+```
+
+#### 3.公募量化对冲基金
+
+```{r quant_public_alpha}
+plots$tbl_alpha()
+```
+
+
+### 2.公募量化优秀基金
+
+#### 1.中证500指数增强
+
+```{r public_quant_top_500}
+plots$hs500(prev_year_date,update_date)
+```
+
+#### 2.沪深300指数增强
+
+```{r public_300}
+plots$hs300(prev_year_date,update_date)
+```
+
+#### 3.量化对冲产品
+
+```{r public_alpha}
+plots$alpha(prev_year_date,update_date)
+```
+
+## 3.量化私募代表产品
+
+### 1.中证500指数增强产品概览
+
+```{r quant_private}
+plots$enhance(prev_year_date,update_date)
+```
+
+### 2.量化对冲产品概览
+
+```{r private_alpha}
+plots$private_alpha(prev_year_date,update_date)
+```
+
+### 3.CTA产品概览
+
+```{r private_cta}
+plots$cta(prev_year_date,update_date)
+```
+
+### 4.中证500指数增强产品详情
+
+```{r private_detail_500}
+plots$tbl_enhance()
+```
+
+### 5.量化对冲产品详情
+
+```{r private_detail_alpha}
+plots$tbl_pri_alpha()
+```
+
+### 6.CTA产品详情
+
+```{r private_detail_cta}
+plots$tbl_cta()
+```
+
+## 4.新发基金统计
+
+```{r new_fund}
+plots$new_prod()
+```
+
+```{r new_fund_type}
+plots$new_prod_type()
+```
+
+## 5.券商资管产品月度统计
+
+```{r security_fund}
+plots$tbl_security()
+```
+
+

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1635672366504.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4197540714",
+    "id" : "A3DDC8",
+    "lastKnownWriteTime" : 1640654209,
+    "last_content_update" : 1640654209673,
+    "path" : "D:/CODE/r_codes/FACOTR_DEPOSITORY/update_main.R",
+    "project_path" : "update_main.R",
+    "properties" : {
+        "cursorPosition" : "31,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

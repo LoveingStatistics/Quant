@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1627559528447.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "437393447",
+    "id" : "AD65F991",
+    "lastKnownWriteTime" : 1627570411,
+    "last_content_update" : 1627570411723,
+    "path" : "D:/allianz/snowball/MC.R",
+    "project_path" : "MC.R",
+    "properties" : {
+        "cursorPosition" : "137,53",
+        "scrollLine" : "133"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
