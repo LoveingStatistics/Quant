@@ -1,0 +1,17 @@
+
+# 随便设置一条价格路径，计算客户最后的损益和对手方最后的损益
+
+pnl_customer <- payoff_beta(St, index, t = 0, knock_in_not = 0)$GAIN
+holding_days <- payoff_beta(St, index, t = 0, knock_in_not = 0)$HOLDING
+
+pnl_trading <- function(St, index, holding_days) {
+
+  for (i in c(0, 1 : holding_days)) {
+    if (i == 0) {
+      # holding half
+
+    } else {
+
+    }
+  }
+}

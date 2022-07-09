@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1627559536240.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "693704221",
+    "id" : "41E1CB0C",
+    "lastKnownWriteTime" : 1627570661,
+    "last_content_update" : 1627570661967,
+    "path" : "D:/allianz/snowball/trading.R",
+    "project_path" : "trading.R",
+    "properties" : {
+        "cursorPosition" : "100,3",
+        "scrollLine" : "66"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

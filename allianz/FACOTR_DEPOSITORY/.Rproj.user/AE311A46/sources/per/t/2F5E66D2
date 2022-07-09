@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1636597685868.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4026114302",
+    "id" : "2F5E66D2",
+    "lastKnownWriteTime" : 1636597704,
+    "last_content_update" : 1636597704012,
+    "path" : "D:/CODE/r_codes/FACOTR_DEPOSITORY/uqer_factor/factor_config.yml",
+    "project_path" : "uqer_factor/factor_config.yml",
+    "properties" : {
+        "cursorPosition" : "1,75",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "yaml"
+}

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1640154161189.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1794352823",
+    "id" : "915BEF88",
+    "lastKnownWriteTime" : 1640593369,
+    "last_content_update" : 1640593369118,
+    "path" : "D:/CODE/r_codes/FACOTR_DEPOSITORY/uqer_factor/dev_uqer_data.R",
+    "project_path" : "uqer_factor/dev_uqer_data.R",
+    "properties" : {
+        "cursorPosition" : "55,34",
+        "scrollLine" : "32",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
