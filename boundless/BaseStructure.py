@@ -3,9 +3,10 @@
 '''
 @File    :   BaseStructure0508.py
 @Time    :   2022/05/08 14:51:22
-@Author  :   Liu Junli
+@Author  :   Yuze Chang 
+             junli Liu
 @Version :   1.0
-@Contact :   liujunli.xmu@foxmail.com
+@Contact :   yuzechang@uchicago.edu
 '''
 
 import json

@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 '''
-@File    :   Untitled-1
+@File    :   demo
 @Time    :   2022/05/09 09:14:37
-@Author  :   Liu Junli
+@Author  :   Yuze Chang
 @Version :   1.0
-@Contact :   liujunli.xmu@foxmail.com
+@Contact :   yuzechang@uchicago.edu
 '''
 
 import warnings
